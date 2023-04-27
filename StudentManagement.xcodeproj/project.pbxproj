@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		352F8D6F29F8F99D002531FB /* AddClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352F8D6E29F8F99D002531FB /* AddClassView.swift */; };
+		352F8D7329FA57D4002531FB /* AddClassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352F8D7229FA57D4002531FB /* AddClassViewModel.swift */; };
+		356F1E9529F131AF00987D3B /* StudentManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1E9429F131AF00987D3B /* StudentManagementApp.swift */; };
+		356F1E9729F131AF00987D3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1E9629F131AF00987D3B /* ContentView.swift */; };
+		356F1E9929F131B300987D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356F1E9829F131B300987D3B /* Assets.xcassets */; };
+		356F1E9C29F131B300987D3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356F1E9B29F131B300987D3B /* Preview Assets.xcassets */; };
+		356F1EAC29F133E000987D3B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EAB29F133E000987D3B /* Student.swift */; };
+		356F1EAF29F1354100987D3B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 356F1EAE29F1354100987D3B /* Realm */; };
+		356F1EB129F1354100987D3B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 356F1EB029F1354100987D3B /* RealmSwift */; };
+		356F1EB329F1359500987D3B /* Classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EB229F1359500987D3B /* Classroom.swift */; };
+		356F1EB529F1399800987D3B /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EB429F1399800987D3B /* School.swift */; };
+		356F1EB729F13B9A00987D3B /* StudentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EB629F13B9A00987D3B /* StudentRepository.swift */; };
+		356F1EBA29F13C8500987D3B /* StudentRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EB929F13C8500987D3B /* StudentRepositoryImpl.swift */; };
+		356F1EBC29F13CD300987D3B /* ClassRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EBB29F13CD300987D3B /* ClassRepository.swift */; };
+		356F1EBE29F13CF500987D3B /* ClassroomRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EBD29F13CF500987D3B /* ClassroomRepositoryImpl.swift */; };
+		356F1EC129F1420600987D3B /* SchoolRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC029F1420600987D3B /* SchoolRepository.swift */; };
+		356F1EC329F57B3500987D3B /* SchoolRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC229F57B3500987D3B /* SchoolRepositoryImpl.swift */; };
+		356F1EC529F57BA600987D3B /* SchoolUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC429F57BA600987D3B /* SchoolUseCase.swift */; };
+		356F1EC729F57CD400987D3B /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC629F57CD400987D3B /* SchoolViewModel.swift */; };
+		356F1EC929F57D5200987D3B /* SchoolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC829F57D5200987D3B /* SchoolListView.swift */; };
+		356F1ECC29F57E7D00987D3B /* AddSchoolUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ECB29F57E7D00987D3B /* AddSchoolUseCase.swift */; };
+		356F1ECE29F57E8B00987D3B /* UpdateSchoolUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ECD29F57E8B00987D3B /* UpdateSchoolUseCase.swift */; };
+		356F1ED029F57E9A00987D3B /* DeleteSchoolUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ECF29F57E9A00987D3B /* DeleteSchoolUseCase.swift */; };
+		356F1ED329F57FD200987D3B /* GetSchoolDataTransferObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ED229F57FD200987D3B /* GetSchoolDataTransferObject.swift */; };
+		356F1ED529F582A100987D3B /* AddSchoolDataTransferObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ED429F582A100987D3B /* AddSchoolDataTransferObject.swift */; };
+		356F1ED829F5838900987D3B /* UpdateSchoolDataTransferObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ED729F5838900987D3B /* UpdateSchoolDataTransferObject.swift */; };
+		356F1EDE29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EDD29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift */; };
+		356F1EE129F58D7000987D3B /* SchoolDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EE029F58D7000987D3B /* SchoolDataSource.swift */; };
+		356F1EE429F591D000987D3B /* APIPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EE329F591D000987D3B /* APIPublisher.swift */; };
+		356F1EE729F5922900987D3B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EE629F5922900987D3B /* APIClient.swift */; };
+		356F1EEA29F599D500987D3B /* AddSchoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EE929F599D500987D3B /* AddSchoolView.swift */; };
+		356F1EF029F6331700987D3B /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EEF29F6331700987D3B /* RealmProvider.swift */; };
+		356F1EFB29F6551A00987D3B /* MockSchoolRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EFA29F6551A00987D3B /* MockSchoolRepository.swift */; };
+		356F1EFD29F667DA00987D3B /* SchoolEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EFC29F667DA00987D3B /* SchoolEntity.swift */; };
+		356F1F0029F6695900987D3B /* SchoolUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EFF29F6695900987D3B /* SchoolUseCases.swift */; };
+		356F1F0229F669BC00987D3B /* SchoolRepositoryImpls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0129F669BC00987D3B /* SchoolRepositoryImpls.swift */; };
+		356F1F0429F67A6300987D3B /* ClassEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0329F67A6300987D3B /* ClassEntity.swift */; };
+		356F1F0829F6861100987D3B /* ClassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0729F6861000987D3B /* ClassViewModel.swift */; };
+		356F1F0B29F6867600987D3B /* StudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0A29F6867600987D3B /* StudentViewModel.swift */; };
+		356F1F0E29F7A3E100987D3B /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0D29F7A3E100987D3B /* ClassListView.swift */; };
+		356F1F1129F7A4B100987D3B /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1029F7A4B100987D3B /* StudentListView.swift */; };
+		356F1F1329F7ABC300987D3B /* StudentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1229F7ABC300987D3B /* StudentEntity.swift */; };
+		356F1F1729F7AD6200987D3B /* ClassUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1629F7AD6200987D3B /* ClassUseCases.swift */; };
+		356F1F1A29F7AD7700987D3B /* StudentUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1929F7AD7700987D3B /* StudentUseCases.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		352F8D6E29F8F99D002531FB /* AddClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassView.swift; sourceTree = "<group>"; };
+		352F8D7229FA57D4002531FB /* AddClassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassViewModel.swift; sourceTree = "<group>"; };
+		356F1E9129F131AF00987D3B /* StudentManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		356F1E9429F131AF00987D3B /* StudentManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManagementApp.swift; sourceTree = "<group>"; };
+		356F1E9629F131AF00987D3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		356F1E9829F131B300987D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		356F1E9B29F131B300987D3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		356F1EAB29F133E000987D3B /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		356F1EB229F1359500987D3B /* Classroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classroom.swift; sourceTree = "<group>"; };
+		356F1EB429F1399800987D3B /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		356F1EB629F13B9A00987D3B /* StudentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRepository.swift; sourceTree = "<group>"; };
+		356F1EB929F13C8500987D3B /* StudentRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRepositoryImpl.swift; sourceTree = "<group>"; };
+		356F1EBB29F13CD300987D3B /* ClassRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepository.swift; sourceTree = "<group>"; };
+		356F1EBD29F13CF500987D3B /* ClassroomRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomRepositoryImpl.swift; sourceTree = "<group>"; };
+		356F1EC029F1420600987D3B /* SchoolRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRepository.swift; sourceTree = "<group>"; };
+		356F1EC229F57B3500987D3B /* SchoolRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRepositoryImpl.swift; sourceTree = "<group>"; };
+		356F1EC429F57BA600987D3B /* SchoolUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolUseCase.swift; sourceTree = "<group>"; };
+		356F1EC629F57CD400987D3B /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
+		356F1EC829F57D5200987D3B /* SchoolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListView.swift; sourceTree = "<group>"; };
+		356F1ECB29F57E7D00987D3B /* AddSchoolUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSchoolUseCase.swift; sourceTree = "<group>"; };
+		356F1ECD29F57E8B00987D3B /* UpdateSchoolUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSchoolUseCase.swift; sourceTree = "<group>"; };
+		356F1ECF29F57E9A00987D3B /* DeleteSchoolUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSchoolUseCase.swift; sourceTree = "<group>"; };
+		356F1ED229F57FD200987D3B /* GetSchoolDataTransferObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSchoolDataTransferObject.swift; sourceTree = "<group>"; };
+		356F1ED429F582A100987D3B /* AddSchoolDataTransferObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSchoolDataTransferObject.swift; sourceTree = "<group>"; };
+		356F1ED729F5838900987D3B /* UpdateSchoolDataTransferObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSchoolDataTransferObject.swift; sourceTree = "<group>"; };
+		356F1EDD29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsAPIDataSourceImpl.swift; sourceTree = "<group>"; };
+		356F1EE029F58D7000987D3B /* SchoolDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDataSource.swift; sourceTree = "<group>"; };
+		356F1EE329F591D000987D3B /* APIPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPublisher.swift; sourceTree = "<group>"; };
+		356F1EE629F5922900987D3B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		356F1EE929F599D500987D3B /* AddSchoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSchoolView.swift; sourceTree = "<group>"; };
+		356F1EEF29F6331700987D3B /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		356F1EFA29F6551A00987D3B /* MockSchoolRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSchoolRepository.swift; sourceTree = "<group>"; };
+		356F1EFC29F667DA00987D3B /* SchoolEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEntity.swift; sourceTree = "<group>"; };
+		356F1EFF29F6695900987D3B /* SchoolUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolUseCases.swift; sourceTree = "<group>"; };
+		356F1F0129F669BC00987D3B /* SchoolRepositoryImpls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRepositoryImpls.swift; sourceTree = "<group>"; };
+		356F1F0329F67A6300987D3B /* ClassEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassEntity.swift; sourceTree = "<group>"; };
+		356F1F0729F6861000987D3B /* ClassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewModel.swift; sourceTree = "<group>"; };
+		356F1F0A29F6867600987D3B /* StudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewModel.swift; sourceTree = "<group>"; };
+		356F1F0D29F7A3E100987D3B /* ClassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListView.swift; sourceTree = "<group>"; };
+		356F1F1029F7A4B100987D3B /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
+		356F1F1229F7ABC300987D3B /* StudentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEntity.swift; sourceTree = "<group>"; };
+		356F1F1629F7AD6200987D3B /* ClassUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassUseCases.swift; sourceTree = "<group>"; };
+		356F1F1929F7AD7700987D3B /* StudentUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCases.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		356F1E8E29F131AF00987D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356F1EB129F1354100987D3B /* RealmSwift in Frameworks */,
+				356F1EAF29F1354100987D3B /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		352F8D7029FA57A1002531FB /* ClassList */ = {
+			isa = PBXGroup;
+			children = (
+				356F1F0D29F7A3E100987D3B /* ClassListView.swift */,
+				356F1F0729F6861000987D3B /* ClassViewModel.swift */,
+			);
+			path = ClassList;
+			sourceTree = "<group>";
+		};
+		352F8D7129FA57B9002531FB /* AddClass */ = {
+			isa = PBXGroup;
+			children = (
+				352F8D6E29F8F99D002531FB /* AddClassView.swift */,
+				352F8D7229FA57D4002531FB /* AddClassViewModel.swift */,
+			);
+			path = AddClass;
+			sourceTree = "<group>";
+		};
+		356F1E8829F131AF00987D3B = {
+			isa = PBXGroup;
+			children = (
+				356F1E9329F131AF00987D3B /* StudentManagement */,
+				356F1E9229F131AF00987D3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		356F1E9229F131AF00987D3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				356F1E9129F131AF00987D3B /* StudentManagement.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		356F1E9329F131AF00987D3B /* StudentManagement */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EA429F131FF00987D3B /* Data */,
+				356F1EA329F131F300987D3B /* Domain */,
+				356F1EA229F131E000987D3B /* Presentation */,
+				356F1E9429F131AF00987D3B /* StudentManagementApp.swift */,
+				356F1E9629F131AF00987D3B /* ContentView.swift */,
+				356F1E9829F131B300987D3B /* Assets.xcassets */,
+				356F1E9A29F131B300987D3B /* Preview Content */,
+			);
+			path = StudentManagement;
+			sourceTree = "<group>";
+		};
+		356F1E9A29F131B300987D3B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				356F1E9B29F131B300987D3B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		356F1EA229F131E000987D3B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EAA29F133B000987D3B /* Views + ViewModels */,
+				356F1EA929F133A900987D3B /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		356F1EA329F131F300987D3B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				356F1ED129F57FAE00987D3B /* DataTransferObject */,
+				356F1EBF29F13E9D00987D3B /* Repositories */,
+				356F1EA729F1338900987D3B /* Entitties */,
+				356F1EA829F1339000987D3B /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		356F1EA429F131FF00987D3B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EDC29F58CCE00987D3B /* DataSource */,
+				356F1EA529F1337200987D3B /* Models */,
+				356F1EA629F1337A00987D3B /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		356F1EA529F1337200987D3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EAB29F133E000987D3B /* Student.swift */,
+				356F1EB229F1359500987D3B /* Classroom.swift */,
+				356F1EB429F1399800987D3B /* School.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		356F1EA629F1337A00987D3B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EB929F13C8500987D3B /* StudentRepositoryImpl.swift */,
+				356F1EBD29F13CF500987D3B /* ClassroomRepositoryImpl.swift */,
+				356F1EC229F57B3500987D3B /* SchoolRepositoryImpl.swift */,
+				356F1F0129F669BC00987D3B /* SchoolRepositoryImpls.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		356F1EA729F1338900987D3B /* Entitties */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EFC29F667DA00987D3B /* SchoolEntity.swift */,
+				356F1F0329F67A6300987D3B /* ClassEntity.swift */,
+				356F1F1229F7ABC300987D3B /* StudentEntity.swift */,
+			);
+			path = Entitties;
+			sourceTree = "<group>";
+		};
+		356F1EA829F1339000987D3B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				356F1F1829F7AD6500987D3B /* Students */,
+				356F1F1429F7AD3F00987D3B /* Classes */,
+				356F1EFE29F6694600987D3B /* Schools */,
+				356F1ECA29F57E4300987D3B /* School */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		356F1EA929F133A900987D3B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				356F1F0929F6866900987D3B /* Student */,
+				356F1F0629F685FB00987D3B /* Class */,
+				356F1F0529F685F300987D3B /* School */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		356F1EAA29F133B000987D3B /* Views + ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				356F1F0F29F7A4A200987D3B /* Student */,
+				356F1F0C29F7A3C800987D3B /* Classes */,
+				356F1EDB29F5870300987D3B /* School */,
+			);
+			path = "Views + ViewModels";
+			sourceTree = "<group>";
+		};
+		356F1EBF29F13E9D00987D3B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EB629F13B9A00987D3B /* StudentRepository.swift */,
+				356F1EBB29F13CD300987D3B /* ClassRepository.swift */,
+				356F1EC029F1420600987D3B /* SchoolRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		356F1ECA29F57E4300987D3B /* School */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EC429F57BA600987D3B /* SchoolUseCase.swift */,
+				356F1ECB29F57E7D00987D3B /* AddSchoolUseCase.swift */,
+				356F1ECD29F57E8B00987D3B /* UpdateSchoolUseCase.swift */,
+				356F1ECF29F57E9A00987D3B /* DeleteSchoolUseCase.swift */,
+			);
+			path = School;
+			sourceTree = "<group>";
+		};
+		356F1ED129F57FAE00987D3B /* DataTransferObject */ = {
+			isa = PBXGroup;
+			children = (
+				356F1ED629F582C100987D3B /* School */,
+			);
+			path = DataTransferObject;
+			sourceTree = "<group>";
+		};
+		356F1ED629F582C100987D3B /* School */ = {
+			isa = PBXGroup;
+			children = (
+				356F1ED229F57FD200987D3B /* GetSchoolDataTransferObject.swift */,
+				356F1ED429F582A100987D3B /* AddSchoolDataTransferObject.swift */,
+				356F1ED729F5838900987D3B /* UpdateSchoolDataTransferObject.swift */,
+			);
+			path = School;
+			sourceTree = "<group>";
+		};
+		356F1EDB29F5870300987D3B /* School */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EC829F57D5200987D3B /* SchoolListView.swift */,
+				356F1EE929F599D500987D3B /* AddSchoolView.swift */,
+			);
+			path = School;
+			sourceTree = "<group>";
+		};
+		356F1EDC29F58CCE00987D3B /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EF929F654FF00987D3B /* MockUp */,
+				356F1EE229F591B100987D3B /* Service */,
+				356F1EDF29F58D5600987D3B /* API */,
+				356F1EE029F58D7000987D3B /* SchoolDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		356F1EDF29F58D5600987D3B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EDD29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		356F1EE229F591B100987D3B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EE529F5921800987D3B /* Parser */,
+				356F1EE329F591D000987D3B /* APIPublisher.swift */,
+				356F1EEF29F6331700987D3B /* RealmProvider.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		356F1EE529F5921800987D3B /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EE629F5922900987D3B /* APIClient.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		356F1EF929F654FF00987D3B /* MockUp */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EFA29F6551A00987D3B /* MockSchoolRepository.swift */,
+			);
+			path = MockUp;
+			sourceTree = "<group>";
+		};
+		356F1EFE29F6694600987D3B /* Schools */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EFF29F6695900987D3B /* SchoolUseCases.swift */,
+			);
+			path = Schools;
+			sourceTree = "<group>";
+		};
+		356F1F0529F685F300987D3B /* School */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EC629F57CD400987D3B /* SchoolViewModel.swift */,
+			);
+			path = School;
+			sourceTree = "<group>";
+		};
+		356F1F0629F685FB00987D3B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		356F1F0929F6866900987D3B /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				356F1F0A29F6867600987D3B /* StudentViewModel.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		356F1F0C29F7A3C800987D3B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				352F8D7129FA57B9002531FB /* AddClass */,
+				352F8D7029FA57A1002531FB /* ClassList */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		356F1F0F29F7A4A200987D3B /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				356F1F1029F7A4B100987D3B /* StudentListView.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		356F1F1429F7AD3F00987D3B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				356F1F1629F7AD6200987D3B /* ClassUseCases.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		356F1F1829F7AD6500987D3B /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				356F1F1929F7AD7700987D3B /* StudentUseCases.swift */,
+			);
+			path = Students;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		356F1E9029F131AF00987D3B /* StudentManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 356F1E9F29F131B300987D3B /* Build configuration list for PBXNativeTarget "StudentManagement" */;
+			buildPhases = (
+				356F1E8D29F131AF00987D3B /* Sources */,
+				356F1E8E29F131AF00987D3B /* Frameworks */,
+				356F1E8F29F131AF00987D3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudentManagement;
+			packageProductDependencies = (
+				356F1EAE29F1354100987D3B /* Realm */,
+				356F1EB029F1354100987D3B /* RealmSwift */,
+			);
+			productName = StudentManagement;
+			productReference = 356F1E9129F131AF00987D3B /* StudentManagement.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		356F1E8929F131AF00987D3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					356F1E9029F131AF00987D3B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 356F1E8C29F131AF00987D3B /* Build configuration list for PBXProject "StudentManagement" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 356F1E8829F131AF00987D3B;
+			packageReferences = (
+				356F1EAD29F1354100987D3B /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 356F1E9229F131AF00987D3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				356F1E9029F131AF00987D3B /* StudentManagement */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		356F1E8F29F131AF00987D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356F1E9C29F131B300987D3B /* Preview Assets.xcassets in Resources */,
+				356F1E9929F131B300987D3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		356F1E8D29F131AF00987D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356F1EB329F1359500987D3B /* Classroom.swift in Sources */,
+				356F1EEA29F599D500987D3B /* AddSchoolView.swift in Sources */,
+				356F1EBA29F13C8500987D3B /* StudentRepositoryImpl.swift in Sources */,
+				356F1EC529F57BA600987D3B /* SchoolUseCase.swift in Sources */,
+				356F1EE429F591D000987D3B /* APIPublisher.swift in Sources */,
+				356F1E9729F131AF00987D3B /* ContentView.swift in Sources */,
+				356F1EC929F57D5200987D3B /* SchoolListView.swift in Sources */,
+				352F8D6F29F8F99D002531FB /* AddClassView.swift in Sources */,
+				356F1EFB29F6551A00987D3B /* MockSchoolRepository.swift in Sources */,
+				356F1F1329F7ABC300987D3B /* StudentEntity.swift in Sources */,
+				356F1EAC29F133E000987D3B /* Student.swift in Sources */,
+				356F1EE129F58D7000987D3B /* SchoolDataSource.swift in Sources */,
+				356F1F0029F6695900987D3B /* SchoolUseCases.swift in Sources */,
+				356F1ED329F57FD200987D3B /* GetSchoolDataTransferObject.swift in Sources */,
+				356F1F1129F7A4B100987D3B /* StudentListView.swift in Sources */,
+				356F1EF029F6331700987D3B /* RealmProvider.swift in Sources */,
+				356F1F1A29F7AD7700987D3B /* StudentUseCases.swift in Sources */,
+				356F1EFD29F667DA00987D3B /* SchoolEntity.swift in Sources */,
+				356F1EB529F1399800987D3B /* School.swift in Sources */,
+				356F1ED829F5838900987D3B /* UpdateSchoolDataTransferObject.swift in Sources */,
+				356F1EE729F5922900987D3B /* APIClient.swift in Sources */,
+				352F8D7329FA57D4002531FB /* AddClassViewModel.swift in Sources */,
+				356F1EBE29F13CF500987D3B /* ClassroomRepositoryImpl.swift in Sources */,
+				356F1ECE29F57E8B00987D3B /* UpdateSchoolUseCase.swift in Sources */,
+				356F1E9529F131AF00987D3B /* StudentManagementApp.swift in Sources */,
+				356F1F0829F6861100987D3B /* ClassViewModel.swift in Sources */,
+				356F1F0229F669BC00987D3B /* SchoolRepositoryImpls.swift in Sources */,
+				356F1F0E29F7A3E100987D3B /* ClassListView.swift in Sources */,
+				356F1EC329F57B3500987D3B /* SchoolRepositoryImpl.swift in Sources */,
+				356F1F0B29F6867600987D3B /* StudentViewModel.swift in Sources */,
+				356F1F0429F67A6300987D3B /* ClassEntity.swift in Sources */,
+				356F1ED029F57E9A00987D3B /* DeleteSchoolUseCase.swift in Sources */,
+				356F1ECC29F57E7D00987D3B /* AddSchoolUseCase.swift in Sources */,
+				356F1EC729F57CD400987D3B /* SchoolViewModel.swift in Sources */,
+				356F1F1729F7AD6200987D3B /* ClassUseCases.swift in Sources */,
+				356F1EC129F1420600987D3B /* SchoolRepository.swift in Sources */,
+				356F1EDE29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift in Sources */,
+				356F1EBC29F13CD300987D3B /* ClassRepository.swift in Sources */,
+				356F1ED529F582A100987D3B /* AddSchoolDataTransferObject.swift in Sources */,
+				356F1EB729F13B9A00987D3B /* StudentRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		356F1E9D29F131B300987D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		356F1E9E29F131B300987D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		356F1EA029F131B300987D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StudentManagement/Preview Content\"";
+				DEVELOPMENT_TEAM = GT4FKFY94M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anhtq.vitalify.StudentManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		356F1EA129F131B300987D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StudentManagement/Preview Content\"";
+				DEVELOPMENT_TEAM = GT4FKFY94M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anhtq.vitalify.StudentManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		356F1E8C29F131AF00987D3B /* Build configuration list for PBXProject "StudentManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				356F1E9D29F131B300987D3B /* Debug */,
+				356F1E9E29F131B300987D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		356F1E9F29F131B300987D3B /* Build configuration list for PBXNativeTarget "StudentManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				356F1EA029F131B300987D3B /* Debug */,
+				356F1EA129F131B300987D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		356F1EAD29F1354100987D3B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		356F1EAE29F1354100987D3B /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 356F1EAD29F1354100987D3B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		356F1EB029F1354100987D3B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 356F1EAD29F1354100987D3B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 356F1E8929F131AF00987D3B /* Project object */;
+}
