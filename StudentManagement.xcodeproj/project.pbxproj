@@ -24,7 +24,7 @@
 		356F1EBE29F13CF500987D3B /* ClassroomRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EBD29F13CF500987D3B /* ClassroomRepositoryImpl.swift */; };
 		356F1EC129F1420600987D3B /* SchoolRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC029F1420600987D3B /* SchoolRepository.swift */; };
 		356F1EC329F57B3500987D3B /* SchoolRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC229F57B3500987D3B /* SchoolRepositoryImpl.swift */; };
-		356F1EC529F57BA600987D3B /* SchoolUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC429F57BA600987D3B /* SchoolUseCase.swift */; };
+		356F1EC529F57BA600987D3B /* GetSchoolUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC429F57BA600987D3B /* GetSchoolUseCase.swift */; };
 		356F1EC729F57CD400987D3B /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC629F57CD400987D3B /* SchoolViewModel.swift */; };
 		356F1EC929F57D5200987D3B /* SchoolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EC829F57D5200987D3B /* SchoolListView.swift */; };
 		356F1ECC29F57E7D00987D3B /* AddSchoolUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ECB29F57E7D00987D3B /* AddSchoolUseCase.swift */; };
@@ -33,7 +33,6 @@
 		356F1ED329F57FD200987D3B /* GetSchoolDataTransferObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ED229F57FD200987D3B /* GetSchoolDataTransferObject.swift */; };
 		356F1ED529F582A100987D3B /* AddSchoolDataTransferObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ED429F582A100987D3B /* AddSchoolDataTransferObject.swift */; };
 		356F1ED829F5838900987D3B /* UpdateSchoolDataTransferObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1ED729F5838900987D3B /* UpdateSchoolDataTransferObject.swift */; };
-		356F1EDE29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EDD29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift */; };
 		356F1EE129F58D7000987D3B /* SchoolDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EE029F58D7000987D3B /* SchoolDataSource.swift */; };
 		356F1EE429F591D000987D3B /* APIPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EE329F591D000987D3B /* APIPublisher.swift */; };
 		356F1EE729F5922900987D3B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EE629F5922900987D3B /* APIClient.swift */; };
@@ -41,16 +40,22 @@
 		356F1EF029F6331700987D3B /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EEF29F6331700987D3B /* RealmProvider.swift */; };
 		356F1EFB29F6551A00987D3B /* MockSchoolRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EFA29F6551A00987D3B /* MockSchoolRepository.swift */; };
 		356F1EFD29F667DA00987D3B /* SchoolEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EFC29F667DA00987D3B /* SchoolEntity.swift */; };
-		356F1F0029F6695900987D3B /* SchoolUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1EFF29F6695900987D3B /* SchoolUseCases.swift */; };
-		356F1F0229F669BC00987D3B /* SchoolRepositoryImpls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0129F669BC00987D3B /* SchoolRepositoryImpls.swift */; };
 		356F1F0429F67A6300987D3B /* ClassEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0329F67A6300987D3B /* ClassEntity.swift */; };
 		356F1F0829F6861100987D3B /* ClassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0729F6861000987D3B /* ClassViewModel.swift */; };
 		356F1F0B29F6867600987D3B /* StudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0A29F6867600987D3B /* StudentViewModel.swift */; };
 		356F1F0E29F7A3E100987D3B /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F0D29F7A3E100987D3B /* ClassListView.swift */; };
 		356F1F1129F7A4B100987D3B /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1029F7A4B100987D3B /* StudentListView.swift */; };
 		356F1F1329F7ABC300987D3B /* StudentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1229F7ABC300987D3B /* StudentEntity.swift */; };
-		356F1F1729F7AD6200987D3B /* ClassUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1629F7AD6200987D3B /* ClassUseCases.swift */; };
+		356F1F1729F7AD6200987D3B /* GetClassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1629F7AD6200987D3B /* GetClassUseCase.swift */; };
 		356F1F1A29F7AD7700987D3B /* StudentUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1929F7AD7700987D3B /* StudentUseCases.swift */; };
+		358002A029FE7B2500430D84 /* SchoolDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580029F29FE7B2500430D84 /* SchoolDataSourceImpl.swift */; };
+		358002A329FE840E00430D84 /* ClazzDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002A229FE840E00430D84 /* ClazzDataSource.swift */; };
+		358002A529FE841F00430D84 /* StudentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002A429FE841F00430D84 /* StudentDataSource.swift */; };
+		358002A729FE842C00430D84 /* ClazzDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002A629FE842C00430D84 /* ClazzDataSourceImpl.swift */; };
+		358002A929FE843C00430D84 /* StudentDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002A829FE843C00430D84 /* StudentDataSourceImpl.swift */; };
+		358002AB29FE87E100430D84 /* AddClazzUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002AA29FE87E100430D84 /* AddClazzUseCase.swift */; };
+		358002AD29FE87F000430D84 /* DeleteClazzUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002AC29FE87EF00430D84 /* DeleteClazzUseCase.swift */; };
+		358002AF29FEADC900430D84 /* AddSchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002AE29FEADC900430D84 /* AddSchoolViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +75,7 @@
 		356F1EBD29F13CF500987D3B /* ClassroomRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomRepositoryImpl.swift; sourceTree = "<group>"; };
 		356F1EC029F1420600987D3B /* SchoolRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRepository.swift; sourceTree = "<group>"; };
 		356F1EC229F57B3500987D3B /* SchoolRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRepositoryImpl.swift; sourceTree = "<group>"; };
-		356F1EC429F57BA600987D3B /* SchoolUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolUseCase.swift; sourceTree = "<group>"; };
+		356F1EC429F57BA600987D3B /* GetSchoolUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSchoolUseCase.swift; sourceTree = "<group>"; };
 		356F1EC629F57CD400987D3B /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
 		356F1EC829F57D5200987D3B /* SchoolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListView.swift; sourceTree = "<group>"; };
 		356F1ECB29F57E7D00987D3B /* AddSchoolUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSchoolUseCase.swift; sourceTree = "<group>"; };
@@ -79,7 +84,6 @@
 		356F1ED229F57FD200987D3B /* GetSchoolDataTransferObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSchoolDataTransferObject.swift; sourceTree = "<group>"; };
 		356F1ED429F582A100987D3B /* AddSchoolDataTransferObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSchoolDataTransferObject.swift; sourceTree = "<group>"; };
 		356F1ED729F5838900987D3B /* UpdateSchoolDataTransferObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSchoolDataTransferObject.swift; sourceTree = "<group>"; };
-		356F1EDD29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsAPIDataSourceImpl.swift; sourceTree = "<group>"; };
 		356F1EE029F58D7000987D3B /* SchoolDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDataSource.swift; sourceTree = "<group>"; };
 		356F1EE329F591D000987D3B /* APIPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPublisher.swift; sourceTree = "<group>"; };
 		356F1EE629F5922900987D3B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -87,16 +91,22 @@
 		356F1EEF29F6331700987D3B /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
 		356F1EFA29F6551A00987D3B /* MockSchoolRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSchoolRepository.swift; sourceTree = "<group>"; };
 		356F1EFC29F667DA00987D3B /* SchoolEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEntity.swift; sourceTree = "<group>"; };
-		356F1EFF29F6695900987D3B /* SchoolUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolUseCases.swift; sourceTree = "<group>"; };
-		356F1F0129F669BC00987D3B /* SchoolRepositoryImpls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRepositoryImpls.swift; sourceTree = "<group>"; };
 		356F1F0329F67A6300987D3B /* ClassEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassEntity.swift; sourceTree = "<group>"; };
 		356F1F0729F6861000987D3B /* ClassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewModel.swift; sourceTree = "<group>"; };
 		356F1F0A29F6867600987D3B /* StudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewModel.swift; sourceTree = "<group>"; };
 		356F1F0D29F7A3E100987D3B /* ClassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListView.swift; sourceTree = "<group>"; };
 		356F1F1029F7A4B100987D3B /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
 		356F1F1229F7ABC300987D3B /* StudentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEntity.swift; sourceTree = "<group>"; };
-		356F1F1629F7AD6200987D3B /* ClassUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassUseCases.swift; sourceTree = "<group>"; };
+		356F1F1629F7AD6200987D3B /* GetClassUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClassUseCase.swift; sourceTree = "<group>"; };
 		356F1F1929F7AD7700987D3B /* StudentUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCases.swift; sourceTree = "<group>"; };
+		3580029F29FE7B2500430D84 /* SchoolDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDataSourceImpl.swift; sourceTree = "<group>"; };
+		358002A229FE840E00430D84 /* ClazzDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClazzDataSource.swift; sourceTree = "<group>"; };
+		358002A429FE841F00430D84 /* StudentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDataSource.swift; sourceTree = "<group>"; };
+		358002A629FE842C00430D84 /* ClazzDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClazzDataSourceImpl.swift; sourceTree = "<group>"; };
+		358002A829FE843C00430D84 /* StudentDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDataSourceImpl.swift; sourceTree = "<group>"; };
+		358002AA29FE87E100430D84 /* AddClazzUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClazzUseCase.swift; sourceTree = "<group>"; };
+		358002AC29FE87EF00430D84 /* DeleteClazzUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteClazzUseCase.swift; sourceTree = "<group>"; };
+		358002AE29FEADC900430D84 /* AddSchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSchoolViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				356F1EAA29F133B000987D3B /* Views + ViewModels */,
-				356F1EA929F133A900987D3B /* ViewModels */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -214,7 +223,6 @@
 				356F1EB929F13C8500987D3B /* StudentRepositoryImpl.swift */,
 				356F1EBD29F13CF500987D3B /* ClassroomRepositoryImpl.swift */,
 				356F1EC229F57B3500987D3B /* SchoolRepositoryImpl.swift */,
-				356F1F0129F669BC00987D3B /* SchoolRepositoryImpls.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -234,20 +242,9 @@
 			children = (
 				356F1F1829F7AD6500987D3B /* Students */,
 				356F1F1429F7AD3F00987D3B /* Classes */,
-				356F1EFE29F6694600987D3B /* Schools */,
-				356F1ECA29F57E4300987D3B /* School */,
+				356F1ECA29F57E4300987D3B /* Schools */,
 			);
 			path = UseCases;
-			sourceTree = "<group>";
-		};
-		356F1EA929F133A900987D3B /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				356F1F0929F6866900987D3B /* Student */,
-				356F1F0629F685FB00987D3B /* Class */,
-				356F1F0529F685F300987D3B /* School */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		356F1EAA29F133B000987D3B /* Views + ViewModels */ = {
@@ -270,15 +267,15 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		356F1ECA29F57E4300987D3B /* School */ = {
+		356F1ECA29F57E4300987D3B /* Schools */ = {
 			isa = PBXGroup;
 			children = (
-				356F1EC429F57BA600987D3B /* SchoolUseCase.swift */,
+				356F1EC429F57BA600987D3B /* GetSchoolUseCase.swift */,
 				356F1ECB29F57E7D00987D3B /* AddSchoolUseCase.swift */,
 				356F1ECD29F57E8B00987D3B /* UpdateSchoolUseCase.swift */,
 				356F1ECF29F57E9A00987D3B /* DeleteSchoolUseCase.swift */,
 			);
-			path = School;
+			path = Schools;
 			sourceTree = "<group>";
 		};
 		356F1ED129F57FAE00987D3B /* DataTransferObject */ = {
@@ -302,8 +299,8 @@
 		356F1EDB29F5870300987D3B /* School */ = {
 			isa = PBXGroup;
 			children = (
-				356F1EC829F57D5200987D3B /* SchoolListView.swift */,
-				356F1EE929F599D500987D3B /* AddSchoolView.swift */,
+				3580029D29FA73C200430D84 /* AddSchool */,
+				3580029C29FA73B700430D84 /* SchoolList */,
 			);
 			path = School;
 			sourceTree = "<group>";
@@ -314,6 +311,8 @@
 				356F1EF929F654FF00987D3B /* MockUp */,
 				356F1EE229F591B100987D3B /* Service */,
 				356F1EDF29F58D5600987D3B /* API */,
+				358002A429FE841F00430D84 /* StudentDataSource.swift */,
+				358002A229FE840E00430D84 /* ClazzDataSource.swift */,
 				356F1EE029F58D7000987D3B /* SchoolDataSource.swift */,
 			);
 			path = DataSource;
@@ -322,7 +321,9 @@
 		356F1EDF29F58D5600987D3B /* API */ = {
 			isa = PBXGroup;
 			children = (
-				356F1EDD29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift */,
+				358002A829FE843C00430D84 /* StudentDataSourceImpl.swift */,
+				358002A629FE842C00430D84 /* ClazzDataSourceImpl.swift */,
+				3580029F29FE7B2500430D84 /* SchoolDataSourceImpl.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -353,37 +354,6 @@
 			path = MockUp;
 			sourceTree = "<group>";
 		};
-		356F1EFE29F6694600987D3B /* Schools */ = {
-			isa = PBXGroup;
-			children = (
-				356F1EFF29F6695900987D3B /* SchoolUseCases.swift */,
-			);
-			path = Schools;
-			sourceTree = "<group>";
-		};
-		356F1F0529F685F300987D3B /* School */ = {
-			isa = PBXGroup;
-			children = (
-				356F1EC629F57CD400987D3B /* SchoolViewModel.swift */,
-			);
-			path = School;
-			sourceTree = "<group>";
-		};
-		356F1F0629F685FB00987D3B /* Class */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		356F1F0929F6866900987D3B /* Student */ = {
-			isa = PBXGroup;
-			children = (
-				356F1F0A29F6867600987D3B /* StudentViewModel.swift */,
-			);
-			path = Student;
-			sourceTree = "<group>";
-		};
 		356F1F0C29F7A3C800987D3B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,7 +366,7 @@
 		356F1F0F29F7A4A200987D3B /* Student */ = {
 			isa = PBXGroup;
 			children = (
-				356F1F1029F7A4B100987D3B /* StudentListView.swift */,
+				3580029B29FA73A000430D84 /* StudentList */,
 			);
 			path = Student;
 			sourceTree = "<group>";
@@ -404,7 +374,9 @@
 		356F1F1429F7AD3F00987D3B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				356F1F1629F7AD6200987D3B /* ClassUseCases.swift */,
+				356F1F1629F7AD6200987D3B /* GetClassUseCase.swift */,
+				358002AA29FE87E100430D84 /* AddClazzUseCase.swift */,
+				358002AC29FE87EF00430D84 /* DeleteClazzUseCase.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -415,6 +387,33 @@
 				356F1F1929F7AD7700987D3B /* StudentUseCases.swift */,
 			);
 			path = Students;
+			sourceTree = "<group>";
+		};
+		3580029B29FA73A000430D84 /* StudentList */ = {
+			isa = PBXGroup;
+			children = (
+				356F1F1029F7A4B100987D3B /* StudentListView.swift */,
+				356F1F0A29F6867600987D3B /* StudentViewModel.swift */,
+			);
+			path = StudentList;
+			sourceTree = "<group>";
+		};
+		3580029C29FA73B700430D84 /* SchoolList */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EC829F57D5200987D3B /* SchoolListView.swift */,
+				356F1EC629F57CD400987D3B /* SchoolViewModel.swift */,
+			);
+			path = SchoolList;
+			sourceTree = "<group>";
+		};
+		3580029D29FA73C200430D84 /* AddSchool */ = {
+			isa = PBXGroup;
+			children = (
+				356F1EE929F599D500987D3B /* AddSchoolView.swift */,
+				358002AE29FEADC900430D84 /* AddSchoolViewModel.swift */,
+			);
+			path = AddSchool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,22 +496,25 @@
 				356F1EB329F1359500987D3B /* Classroom.swift in Sources */,
 				356F1EEA29F599D500987D3B /* AddSchoolView.swift in Sources */,
 				356F1EBA29F13C8500987D3B /* StudentRepositoryImpl.swift in Sources */,
-				356F1EC529F57BA600987D3B /* SchoolUseCase.swift in Sources */,
+				356F1EC529F57BA600987D3B /* GetSchoolUseCase.swift in Sources */,
 				356F1EE429F591D000987D3B /* APIPublisher.swift in Sources */,
+				358002A729FE842C00430D84 /* ClazzDataSourceImpl.swift in Sources */,
 				356F1E9729F131AF00987D3B /* ContentView.swift in Sources */,
+				358002AD29FE87F000430D84 /* DeleteClazzUseCase.swift in Sources */,
 				356F1EC929F57D5200987D3B /* SchoolListView.swift in Sources */,
 				352F8D6F29F8F99D002531FB /* AddClassView.swift in Sources */,
 				356F1EFB29F6551A00987D3B /* MockSchoolRepository.swift in Sources */,
 				356F1F1329F7ABC300987D3B /* StudentEntity.swift in Sources */,
 				356F1EAC29F133E000987D3B /* Student.swift in Sources */,
 				356F1EE129F58D7000987D3B /* SchoolDataSource.swift in Sources */,
-				356F1F0029F6695900987D3B /* SchoolUseCases.swift in Sources */,
 				356F1ED329F57FD200987D3B /* GetSchoolDataTransferObject.swift in Sources */,
 				356F1F1129F7A4B100987D3B /* StudentListView.swift in Sources */,
+				358002A929FE843C00430D84 /* StudentDataSourceImpl.swift in Sources */,
 				356F1EF029F6331700987D3B /* RealmProvider.swift in Sources */,
 				356F1F1A29F7AD7700987D3B /* StudentUseCases.swift in Sources */,
 				356F1EFD29F667DA00987D3B /* SchoolEntity.swift in Sources */,
 				356F1EB529F1399800987D3B /* School.swift in Sources */,
+				358002AB29FE87E100430D84 /* AddClazzUseCase.swift in Sources */,
 				356F1ED829F5838900987D3B /* UpdateSchoolDataTransferObject.swift in Sources */,
 				356F1EE729F5922900987D3B /* APIClient.swift in Sources */,
 				352F8D7329FA57D4002531FB /* AddClassViewModel.swift in Sources */,
@@ -520,19 +522,21 @@
 				356F1ECE29F57E8B00987D3B /* UpdateSchoolUseCase.swift in Sources */,
 				356F1E9529F131AF00987D3B /* StudentManagementApp.swift in Sources */,
 				356F1F0829F6861100987D3B /* ClassViewModel.swift in Sources */,
-				356F1F0229F669BC00987D3B /* SchoolRepositoryImpls.swift in Sources */,
 				356F1F0E29F7A3E100987D3B /* ClassListView.swift in Sources */,
 				356F1EC329F57B3500987D3B /* SchoolRepositoryImpl.swift in Sources */,
 				356F1F0B29F6867600987D3B /* StudentViewModel.swift in Sources */,
+				358002A529FE841F00430D84 /* StudentDataSource.swift in Sources */,
 				356F1F0429F67A6300987D3B /* ClassEntity.swift in Sources */,
+				358002AF29FEADC900430D84 /* AddSchoolViewModel.swift in Sources */,
 				356F1ED029F57E9A00987D3B /* DeleteSchoolUseCase.swift in Sources */,
 				356F1ECC29F57E7D00987D3B /* AddSchoolUseCase.swift in Sources */,
+				358002A329FE840E00430D84 /* ClazzDataSource.swift in Sources */,
 				356F1EC729F57CD400987D3B /* SchoolViewModel.swift in Sources */,
-				356F1F1729F7AD6200987D3B /* ClassUseCases.swift in Sources */,
+				356F1F1729F7AD6200987D3B /* GetClassUseCase.swift in Sources */,
 				356F1EC129F1420600987D3B /* SchoolRepository.swift in Sources */,
-				356F1EDE29F58D1D00987D3B /* SchoolsAPIDataSourceImpl.swift in Sources */,
 				356F1EBC29F13CD300987D3B /* ClassRepository.swift in Sources */,
 				356F1ED529F582A100987D3B /* AddSchoolDataTransferObject.swift in Sources */,
+				358002A029FE7B2500430D84 /* SchoolDataSourceImpl.swift in Sources */,
 				356F1EB729F13B9A00987D3B /* StudentRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
