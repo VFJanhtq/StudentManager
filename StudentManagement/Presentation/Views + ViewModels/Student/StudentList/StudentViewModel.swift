@@ -13,7 +13,7 @@ class StudentViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     @Published var students: [Student] = []
     
-    init(studentUseCases: StudentUseCases, cls: Class) {
+    init(studentUseCases: StudentUseCases, cls: Clazz) {
         self.studentUseCases = studentUseCases
         
         studentUseCases.fetchStudents(classID: cls.id)
@@ -26,7 +26,7 @@ class StudentViewModel: ObservableObject {
             }
             .store(in: &cancellables)
     }
-    func addStudent(name: String, age: Int, cls: Class) {
+    func addStudent(name: String, age: Int, cls: Clazz) {
         studentUseCases.addStudent(classID: cls.id, name: name, age: age)
             .sink { completion in
                 if case let .failure(error) = completion {

@@ -11,7 +11,7 @@ import RealmSwift
 class School: Object,Identifiable {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String = ""
-    let classes = List<Class>()
+    
     convenience init(value: Object) {
         self.init()
         id = value["id"] as! String

@@ -9,18 +9,16 @@ import Foundation
 import SwiftUI
 
 struct AddClassView: View {
-    @StateObject var viewModel: ClassViewModel
+    @ObservedObject var viewModel: AddClazzViewModel
     @Environment(\.dismiss) var dismiss
-    @State var className = ""
-    @State var schoolID: String
     @State var isPresented = false
     
     var body: some View {
         Form {
-            TextField("Class Name", text: $className)
+            TextField("Class Name", text: $viewModel.className)
             Button{
-                viewModel.addClass(name: className, schoolID: schoolID)
-//                dismiss()
+                viewModel.addClazz()
+                dismiss()
             } label: {
                 Text("Save")
             }

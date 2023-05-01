@@ -26,7 +26,7 @@ class StudentRepository: StudentUseCases {
     }
     
     func fetchStudents(classID: String) -> AnyPublisher<[Student], Error> {
-        guard let cls = realm.object(ofType: Class.self, forPrimaryKey: classID) else {
+        guard let cls = realm.object(ofType: Clazz.self, forPrimaryKey: classID) else {
             let error = NSError(domain: "Class not found", code: 404, userInfo: nil)
             return Fail(error: error).eraseToAnyPublisher()
         }
@@ -39,7 +39,7 @@ class StudentRepository: StudentUseCases {
     }
 
     func addStudent(classID: String, name: String, age: Int) -> AnyPublisher<Void, Error> {
-        guard let cls = realm.object(ofType: Class.self, forPrimaryKey: classID) else {
+        guard let cls = realm.object(ofType: Clazz.self, forPrimaryKey: classID) else {
             let error = NSError(domain: "Class not found", code: 404, userInfo: nil)
             return Fail(error: error).eraseToAnyPublisher()
         }

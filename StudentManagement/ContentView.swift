@@ -13,7 +13,7 @@ struct ContentView: View {
     @StateObject var viewModel = SchoolViewModel()
     var body: some View {
         NavigationView {
-            SchoolListView(viewModel: SchoolViewModel(), school: School())
+            SchoolListView(viewModel: SchoolViewModel())
         }
     }
 

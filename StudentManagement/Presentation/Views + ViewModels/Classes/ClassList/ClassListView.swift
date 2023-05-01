@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 
 
-struct ClassListView: View {
-    @ObservedObject var viewModel: ClassViewModel
+struct ClazzListView: View {
+    @ObservedObject var viewModel: ClazzViewModel
     @State var isPresented = false
-
+    
     var body: some View {
         List(viewModel.classes, id: \.id) { cls in
 //            NavigationLink(destination: StudentListView(viewModel: StudentViewModel(schoolUseCases: viewModel.schoolUseCases, cls: cls))) {
@@ -21,18 +21,25 @@ struct ClassListView: View {
 //            }
             
         }
-        .navigationBarTitle("\(viewModel.schoolName) School")
-        .navigationBarItems(trailing: Button(action: {
-            isPresented.toggle()
-        }) {
-            Text("Add Class")
+        .navigationBarTitle("\(viewModel.name) School")
+        .sheet(isPresented: $isPresented, onDismiss: {
+            self.viewModel.apply(inputs: .getClazz(viewModel.id))
+            print("sheet: fetchClazz")
+        }, content: {
+            AddClassView(viewModel: AddClazzViewModel(schoolID: viewModel.id))
         })
-        .sheet(isPresented: $isPresented) {
-            AddClassView(viewModel: ClassViewModel(classUseCases: ClassRepository(), schoolID: viewModel.schoolID, schoolName: ""), schoolID: viewModel.schoolID)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    isPresented = true
+                }label: {
+                    Image(systemName: "plus")
+                }
+            }
         }
         .onAppear {
             DispatchQueue.main.async {
-                self.viewModel.fetchClasses()
+                self.viewModel.apply(inputs: .getClazz(viewModel.id))
             }
         }
     }

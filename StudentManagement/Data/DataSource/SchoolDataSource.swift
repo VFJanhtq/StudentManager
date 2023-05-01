@@ -7,11 +7,10 @@
 
 import Foundation
 import Combine
-import RealmSwift
 
-//protocol SchoolDataSource {
-//    func getSchools() -> AnyPublisher<[School], Error>
-//    func addSchool(school: School) -> AnyPublisher<Void, Error>
-//    func updateSchool(school: School) -> AnyPublisher<Void, Error>
-//    func deleteSchool(school: School) -> AnyPublisher<Void, Error>
-//}
+protocol SchoolDataSource {
+    func fetchSchools() -> Future<[School], Error>
+    func addSchool(name: String) -> Future<Void, Error>
+    func updateSchool(id: String, name: String) -> Future<Void, Error>
+    func deleteSchool(id: String) -> Future<Void, Error>
+}
