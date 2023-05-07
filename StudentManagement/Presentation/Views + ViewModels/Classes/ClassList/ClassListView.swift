@@ -15,11 +15,9 @@ struct ClazzListView: View {
     
     var body: some View {
         List(viewModel.classes, id: \.id) { cls in
-//            NavigationLink(destination: StudentListView(viewModel: StudentViewModel(schoolUseCases: viewModel.schoolUseCases, cls: cls))) {
-//                Text(cls.name)
-            Text(cls.name)
-//            }
-            
+            NavigationLink(destination: StudentListView(viewModel: StudentViewModel(clazzID: cls.id, clazzName: cls.name))) {
+                Text(cls.name)
+            }
         }
         .navigationBarTitle("\(viewModel.name) School")
         .sheet(isPresented: $isPresented, onDismiss: {

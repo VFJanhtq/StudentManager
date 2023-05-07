@@ -3,4 +3,118 @@
    uuid = "077BA95F-D23C-4242-A02C-83FEFAB10D00"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8DDB863E-EE43-4FFB-AC0B-EBD25A1C017D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudentManagement/Presentation/Views + ViewModels/Student/StudentList/StudentListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "8DDB863E-EE43-4FFB-AC0B-EBD25A1C017D - d34abd0d9ef22cf9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StudentManagement.StudentListView.body.getter : some"
+                  moduleName = "StudentManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anhtq/Documents/GitHub/StudentManager/StudentManagement/Presentation/Views%20+%20ViewModels/Student/StudentList/StudentListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "676">
+               </Location>
+               <Location
+                  uuid = "8DDB863E-EE43-4FFB-AC0B-EBD25A1C017D - 13072ba62b2213d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (StudentManagement.Student) -&gt; SwiftUI.Text in StudentManagement.StudentListView.body.getter : some"
+                  moduleName = "StudentManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anhtq/Documents/GitHub/StudentManager/StudentManagement/Presentation/Views%20+%20ViewModels/Student/StudentList/StudentListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "677F999B-6E61-4B36-B814-81F03566DD83"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudentManagement/Data/DataSource/API/StudentDataSourceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "addStudent(name:age:for:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "677F999B-6E61-4B36-B814-81F03566DD83 - bbd1c5caa7b3a5c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; () in StudentManagement.StudentDataSourceImpl.addStudent(name: Swift.String, age: Swift.Int, for: Swift.String) -&gt; Combine.Future&lt;(), Swift.Error&gt;"
+                  moduleName = "StudentManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anhtq/Documents/GitHub/StudentManager/StudentManagement/Data/DataSource/API/StudentDataSourceImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "677F999B-6E61-4B36-B814-81F03566DD83 - 7b1120883f28d2f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 ((Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; () in StudentManagement.StudentDataSourceImpl.addStudent(name: Swift.String, age: Swift.Int, for: Swift.String) -&gt; Combine.Future&lt;(), Swift.Error&gt;"
+                  moduleName = "StudentManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anhtq/Documents/GitHub/StudentManager/StudentManagement/Data/DataSource/API/StudentDataSourceImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DABF8AAF-C5F2-413F-9881-0E49D145B69C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudentManagement/Data/DataSource/API/StudentDataSourceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "addStudent(name:age:for:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

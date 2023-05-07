@@ -19,9 +19,9 @@ struct ClazzDataSourceImpl: ClazzDataSource {
     
     let realm: Realm
     
-        init() {
-            realm = try! Realm()
-        }
+    init() {
+        realm = try! Realm()
+    }
     
     func fetchClazzes(for schoolID: String) -> Future<[Clazz], Error> {
         return Future { promise in
@@ -30,7 +30,7 @@ struct ClazzDataSourceImpl: ClazzDataSource {
             promise(.success(Array(clazzes)))
         }
     }
-
+    
     
     func addClazz(name: String, for schoolID: String) -> Future<Void, Error> {
         return Future { promise in

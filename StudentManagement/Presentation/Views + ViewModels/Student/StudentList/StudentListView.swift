@@ -6,26 +6,37 @@
 //
 
 import Foundation
-import Combine
 import SwiftUI
-import RealmSwift
 
 struct StudentListView: View {
-    @StateObject var viewModel: StudentViewModel
-    @State var isAddStudentPresented = false
+    @ObservedObject var viewModel: StudentViewModel
+    @State var isPresented = false
 
     var body: some View {
         List(viewModel.students, id: \.id) { student in
             Text(student.name)
+//            Text(student.age)
         }
-        .navigationBarTitle("Students")
-        .navigationBarItems(trailing: Button(action: {
-            isAddStudentPresented.toggle()
-        }) {
-            Text("Add")
+        .navigationBarTitle("\(viewModel.name) Clazz")
+        .sheet(isPresented: $isPresented, onDismiss: {
+//            self.viewModel.apply(inputs: .getStudent(viewModel.id))
+            print("sheet: fetchStudent")
+        }, content: {
+            AddStudentView(viewModel: AddStudentViewModel(clazzID: viewModel.id))
         })
-        .sheet(isPresented: $isAddStudentPresented) {
-//            AddStudentView(viewModel: viewModel)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    isPresented = true
+                }label: {
+                    Image(systemName: "plus")
+                }
+            }
+        }
+        .onAppear {
+            DispatchQueue.main.async {
+                self.viewModel.apply(inputs: .getStudent(viewModel.id))
+            }
         }
     }
 }

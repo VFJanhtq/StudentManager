@@ -11,7 +11,6 @@ import Combine
 import SwiftUI
 
 class SchoolViewModel: ObservableObject {
-    @Published var isFlag: Bool = false
     enum Inputs {
         case fetchSchool
         case delSchool(String)

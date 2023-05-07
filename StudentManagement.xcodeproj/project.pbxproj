@@ -47,7 +47,7 @@
 		356F1F1129F7A4B100987D3B /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1029F7A4B100987D3B /* StudentListView.swift */; };
 		356F1F1329F7ABC300987D3B /* StudentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1229F7ABC300987D3B /* StudentEntity.swift */; };
 		356F1F1729F7AD6200987D3B /* GetClassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1629F7AD6200987D3B /* GetClassUseCase.swift */; };
-		356F1F1A29F7AD7700987D3B /* StudentUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1929F7AD7700987D3B /* StudentUseCases.swift */; };
+		356F1F1A29F7AD7700987D3B /* GetStudentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F1F1929F7AD7700987D3B /* GetStudentUseCase.swift */; };
 		358002A029FE7B2500430D84 /* SchoolDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580029F29FE7B2500430D84 /* SchoolDataSourceImpl.swift */; };
 		358002A329FE840E00430D84 /* ClazzDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002A229FE840E00430D84 /* ClazzDataSource.swift */; };
 		358002A529FE841F00430D84 /* StudentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002A429FE841F00430D84 /* StudentDataSource.swift */; };
@@ -56,6 +56,10 @@
 		358002AB29FE87E100430D84 /* AddClazzUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002AA29FE87E100430D84 /* AddClazzUseCase.swift */; };
 		358002AD29FE87F000430D84 /* DeleteClazzUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002AC29FE87EF00430D84 /* DeleteClazzUseCase.swift */; };
 		358002AF29FEADC900430D84 /* AddSchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358002AE29FEADC900430D84 /* AddSchoolViewModel.swift */; };
+		35F36F9E2A07D2D900062F99 /* AddStudentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F36F9D2A07D2D900062F99 /* AddStudentUseCase.swift */; };
+		35F36FA02A07D2EA00062F99 /* DeleteStudentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F36F9F2A07D2EA00062F99 /* DeleteStudentUseCase.swift */; };
+		35F36FA32A07DD6700062F99 /* AddStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F36FA22A07DD6700062F99 /* AddStudentView.swift */; };
+		35F36FA52A07DD7300062F99 /* AddStudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F36FA42A07DD7300062F99 /* AddStudentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +102,7 @@
 		356F1F1029F7A4B100987D3B /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
 		356F1F1229F7ABC300987D3B /* StudentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEntity.swift; sourceTree = "<group>"; };
 		356F1F1629F7AD6200987D3B /* GetClassUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClassUseCase.swift; sourceTree = "<group>"; };
-		356F1F1929F7AD7700987D3B /* StudentUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCases.swift; sourceTree = "<group>"; };
+		356F1F1929F7AD7700987D3B /* GetStudentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStudentUseCase.swift; sourceTree = "<group>"; };
 		3580029F29FE7B2500430D84 /* SchoolDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDataSourceImpl.swift; sourceTree = "<group>"; };
 		358002A229FE840E00430D84 /* ClazzDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClazzDataSource.swift; sourceTree = "<group>"; };
 		358002A429FE841F00430D84 /* StudentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDataSource.swift; sourceTree = "<group>"; };
@@ -107,6 +111,10 @@
 		358002AA29FE87E100430D84 /* AddClazzUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClazzUseCase.swift; sourceTree = "<group>"; };
 		358002AC29FE87EF00430D84 /* DeleteClazzUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteClazzUseCase.swift; sourceTree = "<group>"; };
 		358002AE29FEADC900430D84 /* AddSchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSchoolViewModel.swift; sourceTree = "<group>"; };
+		35F36F9D2A07D2D900062F99 /* AddStudentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentUseCase.swift; sourceTree = "<group>"; };
+		35F36F9F2A07D2EA00062F99 /* DeleteStudentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteStudentUseCase.swift; sourceTree = "<group>"; };
+		35F36FA22A07DD6700062F99 /* AddStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentView.swift; sourceTree = "<group>"; };
+		35F36FA42A07DD7300062F99 /* AddStudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +374,7 @@
 		356F1F0F29F7A4A200987D3B /* Student */ = {
 			isa = PBXGroup;
 			children = (
+				35F36FA12A07DD5700062F99 /* AddStudent */,
 				3580029B29FA73A000430D84 /* StudentList */,
 			);
 			path = Student;
@@ -384,7 +393,9 @@
 		356F1F1829F7AD6500987D3B /* Students */ = {
 			isa = PBXGroup;
 			children = (
-				356F1F1929F7AD7700987D3B /* StudentUseCases.swift */,
+				356F1F1929F7AD7700987D3B /* GetStudentUseCase.swift */,
+				35F36F9D2A07D2D900062F99 /* AddStudentUseCase.swift */,
+				35F36F9F2A07D2EA00062F99 /* DeleteStudentUseCase.swift */,
 			);
 			path = Students;
 			sourceTree = "<group>";
@@ -414,6 +425,15 @@
 				358002AE29FEADC900430D84 /* AddSchoolViewModel.swift */,
 			);
 			path = AddSchool;
+			sourceTree = "<group>";
+		};
+		35F36FA12A07DD5700062F99 /* AddStudent */ = {
+			isa = PBXGroup;
+			children = (
+				35F36FA22A07DD6700062F99 /* AddStudentView.swift */,
+				35F36FA42A07DD7300062F99 /* AddStudentViewModel.swift */,
+			);
+			path = AddStudent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,18 +520,22 @@
 				356F1EE429F591D000987D3B /* APIPublisher.swift in Sources */,
 				358002A729FE842C00430D84 /* ClazzDataSourceImpl.swift in Sources */,
 				356F1E9729F131AF00987D3B /* ContentView.swift in Sources */,
+				35F36F9E2A07D2D900062F99 /* AddStudentUseCase.swift in Sources */,
 				358002AD29FE87F000430D84 /* DeleteClazzUseCase.swift in Sources */,
 				356F1EC929F57D5200987D3B /* SchoolListView.swift in Sources */,
+				35F36FA32A07DD6700062F99 /* AddStudentView.swift in Sources */,
 				352F8D6F29F8F99D002531FB /* AddClassView.swift in Sources */,
 				356F1EFB29F6551A00987D3B /* MockSchoolRepository.swift in Sources */,
 				356F1F1329F7ABC300987D3B /* StudentEntity.swift in Sources */,
 				356F1EAC29F133E000987D3B /* Student.swift in Sources */,
 				356F1EE129F58D7000987D3B /* SchoolDataSource.swift in Sources */,
+				35F36FA52A07DD7300062F99 /* AddStudentViewModel.swift in Sources */,
 				356F1ED329F57FD200987D3B /* GetSchoolDataTransferObject.swift in Sources */,
 				356F1F1129F7A4B100987D3B /* StudentListView.swift in Sources */,
 				358002A929FE843C00430D84 /* StudentDataSourceImpl.swift in Sources */,
 				356F1EF029F6331700987D3B /* RealmProvider.swift in Sources */,
-				356F1F1A29F7AD7700987D3B /* StudentUseCases.swift in Sources */,
+				356F1F1A29F7AD7700987D3B /* GetStudentUseCase.swift in Sources */,
+				35F36FA02A07D2EA00062F99 /* DeleteStudentUseCase.swift in Sources */,
 				356F1EFD29F667DA00987D3B /* SchoolEntity.swift in Sources */,
 				356F1EB529F1399800987D3B /* School.swift in Sources */,
 				358002AB29FE87E100430D84 /* AddClazzUseCase.swift in Sources */,

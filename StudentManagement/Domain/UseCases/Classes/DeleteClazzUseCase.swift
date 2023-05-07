@@ -14,5 +14,4 @@ struct DeleteClazzUseCase {
     func execute(id: String) -> Future<Void, Error> {
         return repository.deleteClazz(id: id)
     }
-    
 }

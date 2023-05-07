@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import RealmSwift
 import Combine
 
 protocol ClazzRepository {

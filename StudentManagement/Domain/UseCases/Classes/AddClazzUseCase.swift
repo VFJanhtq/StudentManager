@@ -14,5 +14,4 @@ struct AddClazzUseCase {
     func execute(name: String, for schoolID: String) -> Future<Void, Error> {
         return repository.addClazz(name: name, for: schoolID)
     }
-    
 }
